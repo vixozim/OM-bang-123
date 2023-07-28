@@ -3910,7 +3910,7 @@ header#sidebar-header ul.nav-menu .mega-links-4columns ul.sub-menu-columns > li 
 @media only screen and (max-width: 450px) {
     #search-filter-2 {
         margin-top: 0px;
-        padding-top: 50px;
+        padding-top: 0px;
     }
 
     #search-filter-2 .col-travelz-2 {
@@ -3921,7 +3921,7 @@ header#sidebar-header ul.nav-menu .mega-links-4columns ul.sub-menu-columns > li 
 	
 	
 	.content-desktop {
-    display: none;
+    display: none !important;
 }
 
 .content-mobile {
