@@ -3922,6 +3922,11 @@ header#sidebar-header ul.nav-menu .mega-links-4columns ul.sub-menu-columns > li 
 	
 	.content-desktop {
     display: none !important;
+
+}
+
+.search-filter .destination:before {
+   display: none;
 }
 
 .content-mobile {

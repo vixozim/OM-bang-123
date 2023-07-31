@@ -196,71 +196,72 @@
 <!-- END MODAL LOGINS -->
    
    <!-- Header  -->
-   <header class="background-white box-shadow">
-    <div class="background-second-color padding-tb-5px">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3"></div>
-                
-                <div class="col-lg-9 position-inherit">
-                    <ul class="user-area list-inline float-right margin-0px text-white">
-                       
-                        <li class="list-inline-item "><a data-toggle="modal" data-target="#mis-reservas" href="#"><i class="fa fa-user-plus padding-right-5px"></i><span  class=" trn">Bookings</span></a></li>
-                         <li class="list-inline-item  padding-right-10px trn"><a data-toggle="modal" data-target="#iniciar-sesion" href="#"><i class="fa fa-lock padding-right-5px"></i><span  class=" trn">Login</span></a></li>
-                    </ul>
+    <!-- Header  -->
+    <header class="background-white box-shadow">
+        <div class="background-second-color padding-tb-5px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    
+                    <div class="col-lg-9 position-inherit">
+                        <ul class="user-area list-inline float-right margin-0px text-white">
+                           
+                            <li class="list-inline-item "><a data-toggle="modal" data-target="#mis-reservas" href="#"><i class="fa fa-user-plus padding-right-5px"></i><span  class=" trn">Bookings</span></a></li>
+							 <li class="list-inline-item  padding-right-10px trn"><a data-toggle="modal" data-target="#iniciar-sesion" href="#"><i class="fa fa-lock padding-right-5px"></i><span  class=" trn">Login</span></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="header-output">
-        <div class="container header-in">
-            <div class="row">
-                <div class="col-lg-3">
-                    <a id="logo" href="index.html" class="d-inline-block margin-tb-10px"><img src="images/logo.png" alt=""></a>
-                    <a class="mobile-toggle" href="#"><i class="fa fa-navicon"></i></a>
-                </div>
-                <div class="col-lg-9 position-inherit">
-                <ul id="menu-main" class="nav-menu float-right link-padding-tb-20px dropdown-dark">
-                    <li class="active "><a href="index.html"><span  class=" trn">Home</span></a></li>
-                    <li><a href="empresa.html" class="trn" ><span  class=" trn">About Us</span></a></li>
-                    
-                    <li style="display: none;"><a   id="apiom_logout" ><span class="trn">Cerrar Sesión</span></a></li>
-                        
-                    <li class="has-dropdown"><a class="apiom_ul_monedas"   >$ARS</a>
-                    <ul id="apiom_ulMonedaUsuario" class="sub-menu" role="menu">
-                            <li class="convert" data-to-currency="ARS" id="ARS"><a>$ (ARS)</a></li>
-                            <li class="convert" data-to-currency="USD" id="USD"><a>US$ (USD)</a></li>
-                            <li class="convert" data-to-currency="EUR" value="EUR" id="EUR"><a>€ (EUR)</a></li>
-                            <li class="convert" data-to-currency="BRL" value="BRL" id="BRL"><a>R$ (BRL)</a></li>
-                            <li class="convert" data-to-currency="UYU" value="UYU" id="UYU"><a>$ (UYU)</a></li>
-                            
-                        </ul>
-                    
-                    </li>
-                        <li class="has-dropdown"><a   id="idiomaSelector"><img class="bg-esp"  src="images/flag.png" alt=""></a>
-                    <ul class="sub-menu" role="menu">
-                             
-                <li><a   class="lang_selector" id="idiomaEN" data-value="en" onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"  ><img class="bg-bra" src="images/flag-uk.png" alt=""> <span  class=" trn">Inglés</span></a></li>
-                <li><a class="lang_selector" id="idiomaES" data-value="es"
-                    onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing"
-                        src="images/flag.png" alt=""><span  class=" trn"> Spanish</span></a></li>
-                <li><a   class="lang_selector" id="idiomaPT" data-value="pt" onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing trn" src="images/flag-br.png" alt=""> <span  class=" trn">Portugués</span></a></li>
-                            
-                        </ul>
-                    
-                    </li>
-                </ul>
+        <div class="header-output">
+            <div class="container header-in">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a id="logo" href="index.html" class="d-inline-block margin-tb-10px"><img src="images/logo.png" alt=""></a>
+                        <a class="mobile-toggle" href="#"><i class="fa fa-navicon"></i></a>
+                    </div>
+                    <div class="col-lg-9 position-inherit">
+					<ul id="menu-main" class="nav-menu float-right link-padding-tb-20px dropdown-dark">
+						<li class="active "><a href="index.html"><span  class=" trn">Home</span></a></li>
+                        <li class="active "><a href="index.html#about-us"><span  class=" trn">About Us</span></a></li>
+                        <li class="active "><a href="index.html#faqs"><span  class=" trn">Faqs</span></a></li>
+						<li style="display: none;"><a   id="apiom_logout" ><span class="trn">Cerrar Sesión</span></a></li>
+							
+						<li class="has-dropdown"><a class="apiom_ul_monedas"   >$ARS</a>
+						<ul id="apiom_ulMonedaUsuario" class="sub-menu" role="menu">
+								<li class="convert" data-to-currency="ARS" id="ARS"><a>$ (ARS)</a></li>
+								<li class="convert" data-to-currency="USD" id="USD"><a>US$ (USD)</a></li>
+								<li class="convert" data-to-currency="EUR" value="EUR" id="EUR"><a>€ (EUR)</a></li>
+								<li class="convert" data-to-currency="BRL" value="BRL" id="BRL"><a>R$ (BRL)</a></li>
+								<li class="convert" data-to-currency="UYU" value="UYU" id="UYU"><a>$ (UYU)</a></li>
+								
+							</ul>
+						
+						</li>
+							<li class="has-dropdown"><a   id="idiomaSelector"><img class="bg-esp"  src="images/flag.png" alt=""></a>
+						<ul class="sub-menu" role="menu">
+								 
+                    <li><a   class="lang_selector" id="idiomaEN" data-value="en" onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"  ><img class="bg-bra" src="images/flag-uk.png" alt=""> <span  class=" trn">Inglés</span></a></li>
+                    <li><a class="lang_selector" id="idiomaES" data-value="es"
+                        onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing"
+                            src="images/flag.png" alt=""><span  class=" trn"> Spanish</span></a></li>
+                    <li><a   class="lang_selector" id="idiomaPT" data-value="pt" onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing trn" src="images/flag-br.png" alt=""> <span  class=" trn">Portugués</span></a></li>
+								
+							</ul>
+						
+						</li>
+					</ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
     <!-- // Header  -->
    <!-- Page title --->
     <div id="page-title" class="text-grey  background-red" >
         <div class="text-center">
             <div class="container z-index-2 position-relative">
-                <h5 class="font-weight-700 italic text-uppercase padding-tb-40px margin-0px trn">Términos & Condiciones</h5>
+                <h5 class="font-weight-700 italic text-uppercase padding-tb-40px margin-0px trn">Terms & Conditions</h5>
             </div>
             
         </div>
@@ -276,15 +277,133 @@
 
                 <!--  content -->
                 <div class="col-lg-8 col-md-8"  style="text-align: justify !important;">
-                    <p class="trn ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
-                    <p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
-                    <p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
-                    <p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
-                    <p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
-                    <p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
-                    <p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
-                    <p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
-                    <p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
+                   
+                    <ul class="list-unstyled">
+                        <li class="trn">BANG! Cars (hereinafter the Company), provides the website www.bangcarrentals.com (hereinafter Website) and its services in a manner strictly subject to the following terms and conditions (hereinafter Terms and Conditions). The use of the website presupposes full consent to these Terms and Conditions. If you do not agree to any statement or part of these Terms and Conditions, you must not use this website or any services provided by the Company.</li>
+                        <li class="trn">By using the services provided on this website and accepting these terms and conditions, you automatically consent to bound the Company with a booking agreement (hereinafter referred to as the Booking Agreement).</li>
+                        <li class="trn">These Terms and Conditions are an integral part of the Booking Agreement between the website user (hereinafter Customer) and the Company.</li>
+                        <li class="trn">The Booking Agreement is deemed to have been completed as soon as the Customer has booked the Service on the Website, and the money available on the Customer's credit/debit card has been charged by the Company accordingly.</li>
+                        <li class="trn">The service provided by the Company in accordance with the Booking Agreement includes the provision of information about the driverless car rental companies (hereinafter Rent-a-Cars) available, sending the Customer's reservation preferences (type of car, place, date and time of booking, rental time) to the Rent-a-Car and sending the detailed information relating to the reservation (hereinafter Voucher) to the Customer by e-mail, if the Rent-a-Car chosen by the Client informs the Company that the specific reservation (hereinafter Service) has been confirmed.</li>
+                        <li class="trn">The Customer undertakes to pay the Company for the Service regardless of whether the rental of the vehicle is made or not (for example, if the rental is cancelled by Rent-a-Car), because it is an intermediation commission. The price of the Service and the car rental price are indicated separately or as a sum (depending on the type of payment chosen) on the Website and in the Voucher sent to the Customer by e-mail by the Company. On the Website, the Service Price and Car Rental Price are visible before choosing a payment method and entering the payment information.</li>
+                        <li class="trn">By entering the payment details and approving the payment, the Customer expresses the desire to enter into the Booking Agreement. The Booking Agreement cannot be revoked after the Confirmation Voucher is sent to the Customer's email address.</li>
+                        <li class="trn">Upon entry into force of the Booking Agreement, the funds (in the amount calculated in accordance with the "Payments" section of these Terms and Conditions) will be withheld and transferred to the Company's bank account. A Voucher will be sent to the Customer's email as confirmation that the Booking Agreement has been completed.</li>
+                        <li class="trn">If the meaning or consequences of the Terms and Conditions are not clear to the Customer, the Customer must contact, prior to making the reservation request, the Company by e-mail (bookings@bangcarrentals.com), which in turn undertakes to provide all necessary clarifications on the Terms and conditions.</li>
+                       
+                        <li>&nbsp</li>
+                        <li class="trn">RESERVATION</li>
+                        <li class="trn">On the Website the Customer can select and book a car that corresponds to his preference among the available variety of cars supplied by the various Rent-a-Cars. The Company does not own or offer its own cars and does not conclude car rental agreements on behalf of the announced Rent-a-Cars.</li>
+                        <li class="trn">The Booking Agreement does not regulate the car rental service. This service will be regulated by contract to be concluded between the Customer and its Rent-a-Car at the time of pick up the rental car.</li>
+                        <li class="trn">Each Rent-a-Car has its own terms and conditions for the provision of services. Nevertheless, the main conditions das Rent-a-Cars on driver requirements, insurance, deposit/security, payments, fuel policy, etc. are available in the booking conditions prior to confirmation of the same. The terms and conditions of the car rental contract will be made available by Rent-a-Carat the time of car pick-up.</li>
+                        <li class="trn">By booking the selected vehicle on the Website, the Customer accepts the rental conditions of Rent-a-Car. The Company presents the rental conditions on the Website as approved by Rent-a-Car and communicated at any time. The Company will not be liable to the Customer if the rental conditions or terms and conditions available on the website Rent-a-Car specific to change.</li>
+                        <li class="trn">Rent-a-Cars prices are advertised in Euros (EUR). There is an option to view prices in other currencies and they will be converted, based on the exchange rate updated daily according to the exchange rates published by the European Central Bank. In the case of full prepayment bookings, the main currency is determined by the partner in their respective country and converted accordingly.</li>
+                       
+                        <li>&nbsp</li>
+                        <li class="trn">BOOKING PROCESS</li>
+                        <li class="trn">To make a reservation, the Customer must choose the desired car class. The reservation does not guarantee a specific car make or model, but rather a chosen car class, unless it is mentioned that the specific model and car make are guaranteed by Rent-a-Car. If the reserved car class is available at the time of pick-up, it will be provided or otherwise a car and class equal to or higher will be provided, under the responsibility of Rent-a-Car.</li>
+                        <li class="trn">The images of the vehicles contained in the research website are merely illustrative. The vehicle provided for hire at the time of pick-up may differ from what is represented in the picture.</li>
+                        <li class="trn"> It is up to the Customer to ensure that the age of the driver complies with the determinations relating to the age of the driver specified by Rent-a-Car. The Company is not responsible if, at the time of the car collection, the Customer does not meet the requirements for delivery of the car to Rent-a-Car.</li>
+                        <li class="trn">Information about the optional services included and excluded from the price is available on the Website under the conditions of the reservation.</li>
+                        <li class="trn">If the Customer needs additional services such as GPS, child seats, bicycle carriers, the possibility to travel outside the country of pick-up, the possibility of returning the car in a location other than that of the pick-up and/or option to pick up the car elsewhere other than the rental office, this is to be specified in the email: bookings@bangcarrentals.com chat on the website when making the booking.</li>
+                        <li class="trn">After booking, the Company is responsible for communicating the confirmation of the same reservation. The confirmation process can take up to 48 hours. If the start date of the rental period is within the next 5 days or less from the date of booking, it will be processed as a priority.</li>
+                        <li class="trn">When Rent-a-Car chose to confirm to the Company that it can rent the requested car, the company retains/charges payment for the Service (including payment for additional services payable to the Company) on the credit card presented by the Customer and sends the respective Confirmation Voucher, thus completing the booking confirmation process.</li>
+                        <li class="trn">If the specifically desired car is not available, the Company will contact the Customer to inform on any alternative bookings.</li>
+                        <li class="trn">If there are no alternative vehicles at all, or the Customer does not accept them, the Company will cancel the reservation and unlock the amount corresponding to the price of the Service on the Customer's payment card.</li>
+                       
+                        <li>&nbsp</li>
+                        <li class="trn">PAYMENTS</li>
+                        <li class="trn">The payment methods accepted by the Company on this Website are a valid credit/debit card.</li>
+                        <li class="trn">Payment methods accepted by Rent-a-Cars vary and may include credit cards, debit cards or cash cards, some of which may only accept credit card payments. It is up to the Customer to check the payment methods accepted by Rent-a-Car chosen (available in the Rental Conditions section) before making the reservation or arriving to pick up the car.</li>
+                        <li class="trn">The Company operates according to the following types of payment for the reserved car:</li>
+                        <li class="trn">26.1. When making a reservation, the Company charges the Customer the prepayment/advance. The Customer will pay the remainder of the car rental price, as well as any payment for mandatory extras and additional services chosen, directly to Rent-a-Car when collecting the car at the destination (reservation with partial prepayment).</li>
+                        <li class="trn">26.2. The Company charges the Customer the total price of the car reservation in its own name and on behalf of Rent-a-Car, including the corresponding price of the Service and the car rental price (reservation with full prepayment).</li>
+                        <li class="trn">The rental price (if not retained by the Company) and other payments for additional extras and services selected at the time of withdrawal, or that have not been retained by the Company, will be charged for Rent-a-Car when picking-up the vehicle.</li>
+                        <li class="trn">When completing the car rental contract, a value corresponding to the security deposit (the deductible or security deposit) is retained on the main driver's credit card to cover the costs of deductible or security, any traffic violations, refilling, etc. The respective Rent-a-Car may agree to withhold the amount of the deposit in cash, but this information must always be confirmed by the Customer directly with the car rental company. If there are no expenses relating to road violations or any other expenses, the security deposit withheld on the credit card expires, usually within 3 weeks from the end of the rental period.</li>
+                        <li class="trn">Payments to Rent-a-Car must be made in the local currency of the country where the car is lifted. If this currency is different from the currency of the Customer's credit card, the credit card issuing company will convert the currency according to its current exchange rate and may also charge a conversion fee. The Company is not responsible for discrepancies between the price displayed on the Website and the amount at which the Customer's credit card was charged if these discrepancies originate from the exchange rate used or the conversion commission applied, as well as if the Customer and Rent-a-Car agree to any other price or method at the time of the confirmation of the reservation.</li>
+                        <li class="trn">RIGHT OF DENUNCIATION</li>
+                        <li>After the conclusion of the Reservation Agreement, except as provided in these Terms and Conditions, the Customer has no right to terminate the same with the right to reconstitution the situation prior to the conclusion of the same, in accordance with the provisions of the legislation of the Portuguese Republic.</li>
+                        <li class="trn">CANCELLATION AND REFUND POLICY</li>
+                        <li class="trn">The Customer may cancel the reservation and receive a credit to be used for future bookings at www.bangcarrentals.com (hereinafter: Booking credit) up to 48 hours prior to the initial pick-up time. To do this, the Client must contact BANG! Cars directly via email: bookings@bangcarrentals.com.</li>
+                        <li class="trn">If cancellation is requested less than 48 hours before, or at any time after, the pick-up time initially stipulated, the customer will not be entitled to a refund of the amount paid.</li>
+                        <li class="trn">Prices are based on the pick-up and return dates and times agreed before the start of the rental. If the car is picked up later or returned earlier, the Customer will not receive any refund for unused hours or days.</li>
+                        <li class="trn">If the reservation is made less than 48 hours in advance of the pick-up time, this reservation is non-refundable.</li>
+                        <li class="trn">If the Customer does not wish to pick up the car (even if no refund is available), he/she must notify the Company immediately; otherwise, an additional no-show fee may be charged, in accordance with the Rent-a-Carpolicies involved.</li>
+                        <li class="trn">If a cancellation request is made to Rent-a-C and not to the Company, this Cancellation and Refund Policy will not apply.</li>
+                        <li class="trn">The Company reserves the right not to grant a refund of money if it considers that the transaction was not made in good faith with the intention of renting a vehicle (for example, if the transaction was made to obtain financial gain).</li>
+                       
+                        <li>&nbsp</li>
+                        <li class="trn">NO SHOW</li>
+                        <li class="trn">If no information is provided to the Company about the cancellation of the reservation 48 hours before the pick-up time and the Customer does not arrive in time to pick up the reserved vehicle, it will be considered a no-show (no-show or no-show) and an additional penalty may be charged for no-show.</li>
+                        <li class="trn">The Company has the right to charge a fine for no-show on behalf of the car rental service provider and not to refund any payment made by the Customer (including advance payment of the full amount) in case of no-show. The following situations are considered a "no-show":</li>
+                        <li class="trn">the Customer does not pick up the car at the time and date specified in the Voucher without notifying the Company 48 hours in advance;</li>
+                        <li class="trn">the Customer does not provide the necessary documentation to pick up the car (specified in the Rental Conditions of each Rent-a-Car);</li>
+                        <li class="trn">the Customer does not have an accepted method to make the payment and leave the security. Usually, the accepted method is a credit card on behalf of the main driver (with the indication of his first and last name), with sufficient balance, without additional limits and valid at least for 2 months after the return date of the vehicle; </li>
+                        <li class="trn">The vehicle is not provided because the Customer was blacklisted or because he presented himself at the place of withdrawal under the influence of alcohol, drugs or by another substance or cause preventing the lifting of the vehicle.</li>
+                        <li class="trn">Rent-a-Cars may reserve the right to refuse to deliver the car to any Customer who does not arrive on the scheduled date and time with all necessary documentation, acceptable means of payment and leave security, or if the Customer presents himself at the place of pick-up of the vehicle, with a cause of impediment such as those mentioned in 54-d.</li>
+                        <li>&nbsp</li>
+                        <li class="trn">CHANGES</li>
+                        <li class="trn">The Client may change may change his/her booking preferences by sending the relevant request by email to bookings@bangcarrentals.com no later than 48 hours before the expected pick up date/time. The Company advises that modification requests received less than 48 hours before the pick up date/time will not be processed and that the Company is not liable for any loss or damage suffered by the Renter in this case.</li>
+                        <li class="trn">The change is free of all, but any type of this, such as changing the place of pick-up or return, car group, rental period or personal details of the driver, may affect the rental price, which may thus be change in relation to the price indicated in the initial confirmation Voucher.</li>
+                        <li class="trn">If the date and/or time of the booking is changed less than 48 hours before the initial pick-up time, no refund of the cost of the Service or the rental price will be granted (if the total amount is paid in advance).</li>
+                        <li class="trn">The Company does not grant and the processing of changes. Any modification requested by the Customer will not enter into force until the Written Confirmation of the Company.</li>
+                        <li class="trn">The Company shall not be responsible for the changes directly agreed between the Rent-a-Car and the Customer.</li>
+                        <li>&nbsp</li>
+                        <li class="trn">CAR PICK-UP</li>
+                        <li class="trn">The Customer must present the following original documents upon car pick-up:</li>
+                        <li class="trn">Printed or electronic voucher (depending on the requirements of the car rental provider);</li>
+                        <li class="trn">Valid driving license that must be valid in the country where a vehicle is to be rented;</li>
+                        <li class="trn">International driving license that may be required by some Rent-a-Cars as a supplement to the regular driving license;</li>
+                        <li class="trn">Valid passport or valid identity card (if accepted and by the car rental provider);</li>
+                        <li class="trn">Valid credit card under the name of the main driver in which his full name appears (as shown on his driving license) and who has a balance sufficient to cover the security deposit/security deposit;</li>
+                        <li class="trn">Other documents required by the car rental provider and mentioned in the Voucher.</li>
+                        <li class="trn"> The Company shall not refund the amounts paid or be responsible if Rent-a-Car refuses to supply the vehicle to the Customer in any of the following cases, other than that referred to in the rest of the Terms and Conditions:</li>
+                        <li class="trn">The Customer uses the car against the terms of use established by Rent-a-Car;</li>
+                        <li class="trn">A problem occurs at the time of withdrawal (resulting in Rent-a-Car’s refusal to supply the vehicle to the Customer) and the Customer does not contact the Company at that time.</li>
+                        <li class="trn">The Company is not responsible for any waiting time in Rent-a-Car office.</li>
+                        <li class="trn">The Company is not responsible for any price change that occurs at the time of pick-up of the rental car due to customer acceptance of any optional services (e.g. additional insurance, additional driver). If the Customer extends the rental period after it has already begun, Rent-a-Car may charge the Customer what he/she has in order to cover all expenses related to the extension of the rental period.</li>
+                        <li class="trn">CDW - Collision Damage Waiver | Liability Insurance</li>
+                        <li class="trn">The Company shall assume no responsibility if the CDW coverage is not included in the rental price and the Customer does not provide a valid proof of its own CDW, as required by Rent-a-Car and mentioned in the Voucher.</li>
+                        <li class="trn">In most cases, Customers are required to leave a security deposit/deposit to cover the total amount or part of the collision coverage (CDW) allowance, the Limitation of Liability for Theft (where applicable) and fuel. For this, a credit card must be presented in the same way as for the lifting of the vehicle.</li>
+                        <li>&nbsp</li>
+                        <li class="trn">APPLICABLE JURISDICTION/LAW</li>
+                        <li class="trn">The Reservation Agreement, the Terms and Conditions and the e-mail communication that is an integral part of the Booking Agreement are governed by and will be interpreted in accordance with the laws of the Portuguese Republic. The courts of general jurisdiction of the Portuguese Republic have exclusive jurisdiction to resolve any claim or dispute that may arise from or in connection with these Terms and Conditions and the Reservation Agreement.</li>
+                       
+                        <li>&nbsp</li>
+                         <li class="trn">CHANGES IN CONDITIONS</li>
+                        <li class="trn">The Company will notify the Customer of changes, and their effective date, to the Terms and Conditions on the Website and the Customer may familiarize himself with the new edition of the Terms and Conditions at least fourteen (14) days before the effective date of the same. The changes also apply to the booking services that took place before and continue to exist on the effective date of the changes. If the Client does not agree with the changes, he/she may, up to the effective date, express such disagreement in writing to the Company, specifying the disagreement with the changes. If at the effective date of the changes the Company has not received a written notification from the Client, the Client shall be deemed to have tacitly agreed to the changes.</li>
+                        <li class="trn">The Company may change the Terms and Conditions unilaterally immediately, without notifying the Customer, if the Customer does not qualify as a consumer in accordance with the laws of the Portuguese Republic if the respective change is favorable to the Customer or if only technical corrections are made thereto.</li>
+                        <li class="trn">The current version of the Terms and Conditions is, at all times, the one available on the Website.</li>
+                        <li>&nbsp</li>
+                        <li class="trn">RESPONSIBILITY</li>
+                        <li class="trn">The Company is not responsible for the incorrect introduction of email addresses or driver names or by incorrect phone numbers or credit card numbers.</li>
+                        <li class="trn"> The Company shall not be responsible for compensating the Customer for damages and losses arising from the non-compatibility of the conduct or cars of a Rent-a-Car not being in accordance with its rental agreement and/or applicable law.</li>
+                        <li class="trn">If the security deposits have been blocked or refunded, these transactions are initiated by the respective car rental provider on the basis of the car rental contract concluded between Rent-a-Car and the Customer. The Company, as an intermediary for the reservation, does not refund or block security deposits in customers' bank accounts or credit cards.</li>
+                        <li class="trn">If the Company offers discounts or promotions, it will be because it is acting on behalf of the respective Rent-a-Car as to the receipt of payment for rental (reservations with full pre-payment). Nevertheless, the Company does not provide car rental services and will transfer payment for rental cars to the respective Rent-a-Car.</li>
+                        <li class="trn">If changes are required to be made to the Customer's reservation, and extras may be made by the Company or Rent-a-Car. In all such cases, the Company shall notify the Customer as soon as possible prior to the withdrawal date and, if the proposed changes are considered unacceptable, the Customer will be offered a full refund. In such cases, the Company's responsibility does not go into any other type of compensation.</li>
+                        <li>&nbsp</li>
+                        <li class="trn">RESOLUTION</li>
+                        <li class="trn">The Company has the right to resolve the Reservation Agreement unilaterally and immediately by notifying the Customer by e-mail in the following cases:</li>
+                        <li class="trn"> If it has received information or indications relating to insolvency, bankruptcy or similar states or financial difficulties are received, as well as illegal conduct to Rent-a-Car;</li>
+                        <li class="trn">Sand the provision of car rental service become impossible or excessively difficult due to error (technical or human) caused by the Company or Rent-a-Car;</li>
+                        <li class="trn">The Customer does not pass and in the security, check carried out by Rent-a-Car.</li>
+                        <li class="trn">If the Company terminates the Booking Agreement, it will refund the Client the amount paid for the Service and the rental price (in the case of pre-payment of the full amount). The Company, as a result of the exercise of this power, is not liable for any other claims or complaints, including compensation for any direct, indirect loss or moral damage suffered by the Customer or for any expense or cost incurred by the Customer in relation to this Booking Agreement, the termination of the Booking Agreement, as well as any new booking agreement stipulated due to the termination of the agreement.</li>
+                        <li class="trn">DATA PROTECTION</li>
+                        <li class="trn">The Company warrants that the Customer's personal data is processed regularly so that rent-of-car service is provided by Rent-a-Car and always in accordance with the personal data protection requirements applicable in the European Union including the General Data Protection Regulation (Regulation 2016/679). Accordingly, the Customer consents that:</li>
+                        <li class="trn">- To provide the Booking Service, the Company has the right to process and send customer's personal data and contact information (full name, date of birth, telephone number, email address) and booking-related information to Rent-a-Car, so that rent service requested can provide the requested rental service;</li>
+                        <li class="trn">- The e-mail will be used by the Company to send the booking confirmation under the form of the Voucher;</li>
+                        <li class="trn">- The telephone number will be used by the Company to clarify matters relating to the reservation if they arise.</li>
+                        <li class="trn">Complete information about the processing of your personal data, such as the type of personal data collected and processed, for what purposes it is used, for how long it is stored and other information, is specified in the Privacy Policy.</li>
+                        <li class="trn">It is permitted to use the Website only to make car hire reservations. It is forbidden to use the website for illegal purposes, i.e. to make speculative or false bookings, or to obtain data about car rental service providers or their car rental offers. By accepting these conditions, the Customer undertakes to use this website only for lawful purposes.</li>
+                      
+                        <li>&nbsp</li>
+                        <li class="trn">COMPLAINTS</li>
+                        <li class="trn">Customer complaints must be emailed to bookings@bangcarrentals.com within 28 days of the last day of the car hire. The Company will not process any complaints received after this period. If the Renter meets the definition of a consumer under the Consumer Rights Protection Act of the Portuguese Republic, the Renter will have the right to lodge a complaint within the period set out in that Act.</li>
+                        <li class="trn">If the complaint is related to Rent-a-car's responsibilities, it must be addressed directly to the same. The Company will inform the Customer on how to proceed if necessary.</li>
+                        <li class="trn">Complaints will be analyzed and a decision will be taken and communicated within 28 days from the day they are received, depending on the level of difficulty of the situation.</li>
+                        <li class="trn">If within 21 calendar days there is no response from the Customer to any of the Company's emails, the case will be closed without any resolution and/or compensation.</li>
+                        </ul>
+
+
+
                 </div>
                 <!-- //  content col-8 -->
 
@@ -297,30 +416,22 @@
 
 
 
+  
     <!-- Footer -->
-    <footer class="text-center text-lg-left">
+    <footer class="text-center text-lg-left background-black">
         <div class="container">
             <div class="row padding-tb-30px">
                 <div class="col-lg-6 sm-mb-35px">
                     <div class="about">
-                        <div class="logo margin-bottom-20px"><a href="index.html"><img src="images/logo-blanco.png" alt=""></a></div>
-                        <p class="trn">
-                            Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet, varius augue. Praesent aliquam, a imperdiet lacus libero ac tellus. Nunc fringilla ullamcorper quam at lacinia.
-                        </p>
+                        <div class="logo margin-bottom-20px"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                       
                     </div>
                 </div>
                 <div class="col-lg-6 sm-mb-35px">
                     <ul class="footer-menu row margin-0px padding-0px list-unstyled">
-                        <li class="col-6  padding-tb-5px"><a href="empresa.html" class="text-white trn">Empresa</a></li>
-                        <li class="col-6  padding-tb-5px"><a href="oficinas.html" class="text-white trn">Oficinas</a></li>
-                        <li class="col-6  padding-tb-5px"><a href="flota.html" class="text-white trn">Flota</a></li>
-                        <li class="col-6  padding-tb-5px"><a href="preguntas-frecuentes.html" class="text-white trn">Preguntas Frecuentes</a></li>
-                        <li class="col-6  padding-tb-5px"><a href="resultado-de-busqueda.html" class="text-white trn">{{Pagina de Resultado}}</a></li>
-                        <li class="col-6  padding-tb-5px"><a href="reserva.html" class="text-white trn">{{Reserva}}</a></li>
-                        <li class="col-6  padding-tb-5px"><a href="sucursal.html" class="text-white trn">{{Sucursal}}</a></li>
-                        <li class="col-6  padding-tb-5px"><a href="mis-reservas-confirmacion.html" class="text-white trn">{{Mis Reservas}}</a></li>
-                        <li class="col-6  padding-tb-5px"><a href="confirmacion.html" class="text-white trn">{{Confirmación}}</a></li>
-						 <li class="col-6  padding-tb-5px"><a href="datos-personales.html" class="text-white trn">{{Datos Personales}}</a></li>
+                      
+                       
+						 <li class="col-6  padding-tb-5px"><a href="terminos-y-condiciones.html" class="text-white trn">Terms & Conditions</a></li>
                     </ul>
                 </div>
                 
@@ -331,7 +442,7 @@
                 
                 </div>
                 <div class="col-lg-4 sm-mb-20px">
-                       <p class="text-lg-left trn"><span class="text-white">Car Rental</span> | @2021 <span class="trn">Todos los derechos reservados</span></p>
+                       <p class="text-lg-left text-main-color"><span class="text-white">Bang Cars</span> | @2023 <span class="trn text-main-color">All rights reserved</span></p>
                 </div>
                 <div class="col-lg-4">
                     <ul class="social_link list-inline text-sm-center text-lg-right">
